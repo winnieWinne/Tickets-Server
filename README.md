@@ -1,25 +1,33 @@
-# Tickets-Server
+# Tickets-Server [![Build Status](https://travis-ci.org/AwesomeTickets/Tickets-Server.svg?branch=master)](https://travis-ci.org/AwesomeTickets/Tickets-Server)
 
-Server of a movie tickets system powered by Spring & Thymeleaf.
+Server of AwesomeTickets system.
 
-[Dashboard](http://stevennl.com/post/dashboard-of-tickets-system/) [Client](https://github.com/Liveipool/Tickets-Client)
-
-## Build & Run
+## Installation
 
 1. Download [Maven](http://maven.apache.org/download.cgi).
 
-2. Run commands below:
+2. Build and run:
 
-    ```bash
-    $ mvn clean
-    $ mvn compile
-    $ mvn tomcat7:run
+    - foreground
+
+        ```sh
+        $ python server.py
+        ```
+
+    - background
+
+        ```sh
+        $ python deploy.py
+        ```
+
+3. The application should be available at http://localhost:8080
+
+4. Run unit tests:
+
+    ```sh
+    $ mvn clean test
     ```
 
-    or
+## License
 
-    ```bash
-    $ python server.py
-    ```
-
-3. The application should be available at `http://localhost:8080/tickets`.
+See the [LICENSE](./LICENSE) file for license rights and limitations.
